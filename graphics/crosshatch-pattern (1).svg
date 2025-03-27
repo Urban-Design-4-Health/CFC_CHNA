@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Define the pattern -->
+  <defs>
+    <pattern id="crosshatch" patternUnits="userSpaceOnUse" width="5" height="5">
+      <!-- First diagonal line (top-left to bottom-right) -->
+      <line x1="0" y1="5" x2="5" y2="0" stroke="black" stroke-width="0.2"/>
+      <!-- Second diagonal line (bottom-left to top-right) -->
+      <line x1="0" y1="0" x2="5" y2="5" stroke="black" stroke-width="0.2"/>
+    </pattern>
+  </defs>
+  
+  <!-- Rectangle filled with the crosshatch pattern -->
+  <rect width="100" height="100" fill="url(#crosshatch)"/>
+</svg>

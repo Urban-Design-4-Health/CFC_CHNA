@@ -1,0 +1,145 @@
+#root {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#map-container {
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  border-radius: 10px;
+}
+
+.pageTitle {
+  font-family: Georgia;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(247 191 5 / 100%);
+  font-size: 25px;
+  line-height: 0.5;
+ }
+ 
+ .pageSubtitle {
+  font-family: Georgia;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(250 250 250 / 100%);
+  font-size: 20px;
+  line-height: 0.5;
+ }
+
+ .pageMapos {
+  font-family: Georgia;
+  font-weight: bold;
+  color: rgb(35 55 75 / 90%);
+  text-shadow:-1px 1px 1px #fff, -1px 1px 1px #ccc;
+  font-size: 12px;
+  line-height: 0.5;
+ }
+
+.titlebar {
+  background-color: rgba(35, 45, 80, 90%);
+  color: rgb(35 4Z 75 / 90%);
+  padding: 5px 5px;
+  z-index: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100px;
+  border-radius: 0px;
+}
+
+.sidebar2 {
+  background-color: rgba(250, 250, 250, 90%);
+  color: rgb(70 2 138 / 90%);
+  padding: 6px 12px;
+  font-family: Georgia;
+  font-size: 10pt;
+  width: 250px;
+  z-index: 1;
+  position: absolute;
+  top: 210px;
+  left: 0px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+
+.reset-button {
+  position: absolute;
+  bottom: 40px;
+  left: 10px;
+  width: 280px;
+  z-index: 1;
+  padding: 4px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.CFC_logo {
+  background-color: rgba(35, 45, 80, 90%);
+  padding: 1px 3px;
+  z-index: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.UD4H_logo {
+  background-color: rgb(35 55 75 / 90%);
+  padding: 1px 3px;
+  z-index: 1;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  margin: 6px;
+  border-radius: 4px;
+}
+
+.overlay {
+  background-color: rgb(200 200 200 / 50%);
+  padding: .5rem 10px .5rem;
+  font-family: Georgia;
+  font-size: 10pt;
+  z-index: 1;
+  position: fixed;
+  top: 110px;
+  right: 3px;
+  width: 250px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.slayer {
+  background-color: rgb(243 185 160 / 70%);
+  padding: .5rem 10px .5rem;
+  font-family: Georgia;
+  font-size: 10pt;
+  z-index: 1;
+  position: fixed;
+  top: 110px;
+  left: 3px;
+  width: 250px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.mapLegend {
+  background-color: rgb(35 55 75 / 90%);
+  padding: 1px 3px;
+  z-index: 1;
+  position: fixed;
+  bottom: 30px;
+  left: 10px;
+  margin: 6px;
+  border-radius: 10px;
+}
