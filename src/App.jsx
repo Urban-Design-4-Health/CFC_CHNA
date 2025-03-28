@@ -15,7 +15,16 @@ import './App.css'
 import 'mapboxgl-legend/dist/style.css';
 
 // load config File
-import metfile from '../data/metrics.json'
+import metfile from '../data/metrics.json';
+
+// load image fileSize
+import CFClogo from '../graphics/CFC_logo.png';
+import UD4Hlogo from '../graphics/logo2.png';
+import RedHatch from '../graphics/red_thin.png';
+import HatchLeg from '../graphics/hatch_leg.png';
+
+// load geojson
+//import METRICS from '../data/Metrics_for_website_4326.geojson?raw';
 
 // Set constant values
 const INITIAL_CENTER = [-81.6, 28.6]
@@ -129,34 +138,33 @@ function App() {
         // Add Metrics
         mapRef.current.addSource('CBGs', {
           type: 'geojson',
-          data: './data/Metrics_for_website_4326.geojson'
+          data: '../data/Metrics_for_website_4326.geojson'
         });
 		
-
         
         mapRef.current.addSource('Water', {
           type: 'geojson',
-          data: './data/Water_for_website_4326.geojson'
+          data: '../data/Water_for_website_4326.geojson'
         });
         
         mapRef.current.addSource('PAD', {
           type: 'geojson',
-          data: './data/PAD_for_website_4326.geojson'
+          data: '../data/PAD_for_website_4326.geojson'
         });
         
         mapRef.current.addSource('ZR', {
           type: 'geojson',
-          data: './data/ZeroPop_for_website_4326.geojson'
+          data: '../data/ZeroPop_for_website_4326.geojson'
         });
         
         mapRef.current.addSource('CNTY', {
           type: 'geojson',
-          data: './data/County_for_website_4326.geojson'
+          data: '../data/County_for_website_4326.geojson'
         });
         
         mapRef.current.addSource('RDS', {
           type: 'geojson',
-          data: './data/Roads_for_website_4326.geojson'
+          data: '../data/Roads_for_website_4326.geojson'
         });
         
         // Add layers
@@ -188,12 +196,12 @@ function App() {
 		// Add Overlay
         mapRef.current.addSource('OL', {
           type: 'geojson',
-          data: './data/Metrics_for_website_4326.geojson'
+          data: '../data/Metrics_for_website_4326.geojson'
         });
 		
 	    // Add overlay pattern
         mapRef.current.loadImage(
-		   '../graphics/red_thin.png',
+		   RedHatch,
 		   (error, image) => {
                 if (error) throw error;
 		        mapRef.current.addImage('hatched-pattern', image);
@@ -460,37 +468,7 @@ function App() {
 }, [overlayIndex]);
 
 
-  // Effect to handle hospital markers
-  // useEffect(() => {
-    // if (mapRef.current && mapRef.current.isStyleLoaded()) {
-      // Clear existing markers
-      // markersRef.current.forEach(marker => marker.remove());
-      // markersRef.current = [];
-      
-      // if (showHospitals) {
-        //Add hospital markers
-        // hospitals.forEach(hospital => {
-          // const el = document.createElement('div');
-          // el.className = 'hospital-marker';
-          // el.style.backgroundImage = hospital.type === 'Trauma Center' 
-            // ? 'url(./graphics/trauma-marker.png)' 
-            // : 'url(./graphics/hospital-marker.png)';
-          // el.style.width = '24px';
-          // el.style.height = '24px';
-          // el.style.backgroundSize = 'cover';
-          
-          // const marker = new mapboxgl.Marker(el)
-            // .setLngLat(hospital.coordinates)
-            // .setPopup(new mapboxgl.Popup().setHTML(`<h3>${hospital.name}</h3><p>${hospital.type}</p>`))
-            // .addTo(mapRef.current);
-          
-          // markersRef.current.push(marker);
-        // });
-      // }
-    // }
-  // }, [showHospitals]);
-
-  return (
+ return (
     <>
 	  {/* Titlebar */}
       <div className="titlebar">
@@ -533,13 +511,13 @@ function App() {
 		
       {/* CFC Logo */}
       <div className="CFC_logo">
-        <img src={'./graphics/CFC_logo.png'} height={120} alt="CFC Logo" />
+        <img src={CFClogo} height={120} alt="CFC Logo" />
       </div>
       
       {/* UD4H Logo */}
       <div className="UD4H_logo">
         <a href="https://urbandesign4health.com" target="_blank" rel="noopener noreferrer">
-           <img src={'./graphics/logo2.png'} height={120} alt="UD4H Logo" />
+           <img src={UD4Hlogo} height={120} alt="UD4H Logo" />
         </a>
       </div>
       
@@ -580,7 +558,7 @@ function App() {
             <h3 style={{...legendHeadingStyle, marginTop: '10px', borderTop: '1px solid #ccc', paddingTop: '10px'}}>
             </h3> 
             <div>
-			  <img src="../graphics/hatch_leg.png" width="20" style={{ marginRight: '10px',
+			  <img src={HatchLeg} width="20" style={{ marginRight: '10px',
 			                                                         verticalAlign: 'top'}}/>
               <span style={{ wordWrap: 'break-word', maxWidth: '220px', display: 'inline-block' }}>
                   {ov_layers.find(layer => layer.id === overlayIndex)?.name}
@@ -594,24 +572,3 @@ function App() {
 }
 
 export default App
-
-      // /* {/* Address Search }
-      // <div className="address-search">
-        // <h3>Find Location:</h3>
-        // <form onSubmit={handleAddressSearch}>
-          // <input 
-            // type="text" 
-            // placeholder="Enter address..." 
-            // value={searchAddress}
-            // onChange={(e) => setSearchAddress(e.target.value)}
-          // />
-          // <button type="submit">Search</button>
-        // </form>
-      // </div>
-      
-      // {/* Hospital Toggle }
-      // <div className="hospital-toggle">
-        // <button onClick={toggleHospitals}>
-          // {showHospitals ? 'Hide Hospitals' : 'Show Hospitals'}
-        // </button>
-      // </div> */
