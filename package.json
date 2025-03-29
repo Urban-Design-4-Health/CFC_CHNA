@@ -1,6 +1,5 @@
 {
   "name": "bb-mapboxgl",
-  "homepage": "https://Urban-Design-4-Health.github.io/CFC_CHNA/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,9 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "git": "^0.1.5",
