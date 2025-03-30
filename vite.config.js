@@ -17,6 +17,12 @@ export default defineConfig({
       './assets/Logo2.png',
       './assets/red_thin.png',
       './assets/hatch_leg.png',
+      './data/Metrics_for_website_4326.geojson',
+      './data/Water_for_website_4326.geojson',
+      './data/PAD_for_website_4326.geojson',
+      './data/ZeroPop_for_website_4326.geojson',
+      './data/County_for_website_4326.geojson',
+      './data/Roads_for_website_4326.geojson',
 
     ],
   },
