@@ -9,6 +9,7 @@
 #map-container {
   height: calc(100% - 125px);
   width: 100%;
+  top: 125px;
 }
 
 img {
