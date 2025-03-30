@@ -139,33 +139,33 @@ function App() {
         // Add Metrics
         mapRef.current.addSource('CBGs', {
           type: 'geojson',
-          data: '../data/Metrics_for_website_4326.geojson'
+          data: '/data/Metrics_for_website_4326.geojson'
         });
 		
         
         mapRef.current.addSource('Water', {
           type: 'geojson',
-          data: '../data/Water_for_website_4326.geojson'
+          data: '/data/Water_for_website_4326.geojson'
         });
         
         mapRef.current.addSource('PAD', {
           type: 'geojson',
-          data: '../data/PAD_for_website_4326.geojson'
+          data: '/data/PAD_for_website_4326.geojson'
         });
         
         mapRef.current.addSource('ZR', {
           type: 'geojson',
-          data: '../data/ZeroPop_for_website_4326.geojson'
+          data: '/data/ZeroPop_for_website_4326.geojson'
         });
         
         mapRef.current.addSource('CNTY', {
           type: 'geojson',
-          data: '../data/County_for_website_4326.geojson'
+          data: '/data/County_for_website_4326.geojson'
         });
         
         mapRef.current.addSource('RDS', {
           type: 'geojson',
-          data: '../data/Roads_for_website_4326.geojson'
+          data: '/data/Roads_for_website_4326.geojson'
         });
         
         // Add layers
@@ -197,7 +197,7 @@ function App() {
 		// Add Overlay
         mapRef.current.addSource('OL', {
           type: 'geojson',
-          data: '../data/Metrics_for_website_4326.geojson'
+          data: '/data/Metrics_for_website_4326.geojson'
         });
 		
 	    // Add overlay pattern
