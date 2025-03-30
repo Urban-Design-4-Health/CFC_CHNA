@@ -4,6 +4,7 @@
 //  open browser:  http://localhost:5173/
 //
 
+//mapboxgl.accessToken = 'pk.eyJ1IjoidWQ0aCIsImEiOiJjbDVyNXlmeTEwMGoyM2JwYm9oYnlzc3Q0In0.-DHdTNsriTaq0uGL_BBTYg';
 
 // Import components and libraries
 import { useRef, useEffect, useState, useMemo } from 'react'
