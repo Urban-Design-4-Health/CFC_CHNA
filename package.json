@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "git": "^0.1.5",
+    "mapbox-gl": "^3.10.0",
     "mapboxgl-legend": "^1.15.0",
     "papaparse": "^5.5.2",
     "react": "^18.3.1",

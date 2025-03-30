@@ -7,7 +7,7 @@
 
 // Import components and libraries
 import { useRef, useEffect, useState, useMemo } from 'react'
-import mapboxgl from 'mapbox-gl'
+import mapboxgl from "mapbox-gl";
 import "react-widgets/styles.css";
 import DropdownList from "react-widgets/DropdownList";
 import 'mapbox-gl/dist/mapbox-gl.css';
