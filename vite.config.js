@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import resolve from '@rollup/plugin-node-resolve';
-import commonjs from '@rollup/plugin-commonjs';
+//import resolve from '@rollup/plugin-node-resolve';
+//import commonjs from '@rollup/plugin-commonjs';
 
 
 // https://vite.dev/config/
