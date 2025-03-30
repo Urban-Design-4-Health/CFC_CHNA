@@ -20,10 +20,7 @@ export default defineConfig({
 
     ],
   },
-  plugins: [react(),
-    resolve(), // Resolve modules from node_modules
-    commonjs(), // Convert CommonJS modules to ES modules
-  ],
+  plugins: [react()],
   build:{
     outDir: "build"
   }
