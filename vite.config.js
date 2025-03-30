@@ -14,7 +14,7 @@ export default defineConfig({
       'mapbox-gl/dist/mapbox-gl.css',
       'mapboxgl-legend/dist/style.css',
       './assets/CFC_logo.png',
-      './assets/logo2.png',
+      './assets/Logo2.png',
       './assets/red_thin.png',
       './assets/hatch_leg.png',
 

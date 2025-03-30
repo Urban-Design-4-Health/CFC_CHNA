@@ -20,7 +20,7 @@ import metfile from '../data/metrics.json';
 
 // load image fileSize
 import CFClogo from './assets/CFC_logo.png';
-import UD4Hlogo from './assets/logo2.png';
+import UD4Hlogo from './assets/Logo2.png';
 import RedHatch from './assets/red_thin.png';
 import HatchLeg from './assets/hatch_leg.png';
 
