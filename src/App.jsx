@@ -397,13 +397,13 @@ function App() {
 
     case 5: // Acute Care Access
       popupContent += `
-        <p>Travel Time by Car to Acute Care: ${parseFloat(properties.A_HospitalTT).toFixed(1)} Minutes</p>
+        <p>Travel Time by Car to Acute Care: ${parseFloat(properties.HospitalTT).toFixed(1)} Minutes</p>
       `;
       break;
 	  
     case 6: // Trauma Center Access
       popupContent += `
-        <p>Travel Time by Car to Trauma Center: ${parseFloat(properties.A_TraumaTT).toFixed(1)} Minutes</p>
+        <p>Travel Time by Car to Trauma Center: ${parseFloat(properties.TraumaTT).toFixed(1)} Minutes</p>
       `;
       break;
     
