@@ -22,7 +22,7 @@ import metfile from '../data/metrics.json';
 import CFClogo from './src/assets/CFC_logo.png';
 import UD4Hlogo from './src/assets/logo2.png';
 import RedHatch from './src/assets/red_thin.png';
-import HatchLeg from './src/assets/hatch_leg.png';
+//import HatchLeg from './src/assets/hatch_leg.png';
 
 // load geojson
 //import METRICS from '../data/Metrics_for_website_4326.geojson?raw';
