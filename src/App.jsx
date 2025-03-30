@@ -19,10 +19,10 @@ import 'mapboxgl-legend/dist/style.css';
 import metfile from '../data/metrics.json';
 
 // load image fileSize
-import CFClogo from '../data/CFC_logo.png';
-import UD4Hlogo from '../data/logo2.png';
-import RedHatch from '../data/red_thin.png';
-import HatchLeg from '../data/hatch_leg.png';
+import CFClogo from '../public/CFC_logo.png';
+import UD4Hlogo from '../public/logo2.png';
+import RedHatch from '../public/red_thin.png';
+import HatchLeg from '../public/hatch_leg.png';
 
 // load geojson
 //import METRICS from '../data/Metrics_for_website_4326.geojson?raw';
