@@ -7,7 +7,9 @@ import commonjs from '@rollup/plugin-commonjs';
 // https://vite.dev/config/
 export default defineConfig({
   optimizeDeps: {
-    include: ['mapbox-gl'],
+    include: ['mapbox-gl',
+      "react-widgets/styles.css"
+    ],
   },
   plugins: [react(),
     resolve(), // Resolve modules from node_modules
