@@ -13,6 +13,11 @@ export default defineConfig({
       'react-widgets/DropdownList',
       'mapbox-gl/dist/mapbox-gl.css',
       'mapboxgl-legend/dist/style.css',
+      '../src/assets/CFC_logo.png',
+      '../src/assets/logo2.png',
+      '../src/assets/red_thin.png',
+      '../src/assets/hatch_leg.png',
+
     ],
   },
   plugins: [react(),
