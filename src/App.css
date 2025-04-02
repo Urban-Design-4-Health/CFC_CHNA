@@ -121,7 +121,7 @@ img {
   font-family: Georgia;
   font-size: 10pt;
   z-index: 1;
-  position: fixed;
+  position: absolute;
   top: 135px;
   right: 3px;
   width: 250px;
@@ -135,7 +135,7 @@ img {
   font-family: Georgia;
   font-size: 10pt;
   z-index: 1;
-  position: fixed;
+  position: absolute;
   top: 135px;
   left: 3px;
   width: 250px;

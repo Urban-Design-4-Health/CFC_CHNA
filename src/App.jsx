@@ -34,10 +34,10 @@ const INITIAL_ZOOM = 9.5
 // List of Overlay Maps for Pulldown
 const ov_layers = [
   { id: 1, name: "No Overlay", file: "" },
-  { id: 2, name: "Poverty: More than 20% of households are below the federal poverty level", property: "PovFlag" },
-  { id: 4, name: "Age 65+: More than 20% of the population are 65 or older", property: "SenFlag" },
-  { id: 5, name: "Age less than 18:  More than 25% of the population are under the age of 18", property: "ChildFlag" },
-  { id: 6, name: "Walkability: Walkability value greater than 14 out of 20", property: "WalkFlag" }
+  { id: 2, name: "Poverty: 20%+ of households below the federal poverty level", property: "PovFlag" },
+  { id: 4, name: "Seniors: 20%+ of population is 65 or older", property: "SenFlag" },
+  { id: 5, name: "Youth:  25% of population aged 18 or younger", property: "ChildFlag" },
+  { id: 6, name: "Walkability: score is 14+ out of 20 (high)", property: "WalkFlag" }
 ];
 
 // List of Health Metrics for Pulldown
